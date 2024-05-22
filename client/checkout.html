@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming School</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="School Logo" />
+      </div>
+      <span class="name">SCHOOL NAME</span>
+      <div class="photo">
+        <img src="img/schoolphoto2.jpeg" alt="School Photo" />
+        <img src="img/schoolphoto.jpeg" alt="School Photo" />
+      </div>
+      <div class="description">
+        <h1>Welcome to Programming School</h1>
+        <p>
+          Our school offers comprehensive courses in various programming
+          languages to help you become a skilled developer. Join us to kickstart
+          your coding journey!
+        </p>
+      </div>
+
+      <div class="banners">
+        <div id="banner1" class="banner">
+          <div class="front1">
+            <h2>Lessons schedule</h2>
+          <p>...</p>
+          </div>
+          <div class="back1"></div>
+      </div>
+      
+      <div id="banner2" class="banner">
+        <div class="front2">
+          <h2>Lessons schedule</h2>
+        <p>...</p>
+        </div>
+        <div class="back2"></div>
+      </div>
+      
+      <div id="banner3" class="banner">
+        <div class="front3">
+          <h2>Lessons schedule</h2>
+        <p>...</p>
+        </div>
+        <div class="back3"></div>
+      </div>
+      </div>
+
+      <div class="registration-form">
+        <h2>Register for Courses</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="f6e6ed7e-fc7f-4d61-a779-aa3f7c3ffdae"
+          />
+
+          <span>Your name</span>
+          <input
+            type="text"
+            name="name"
+            id=""
+            class="box"
+            required
+            placeholder="Enter your name.."
+            autocomplete="off"
+          />
+
+          <span>Your email</span>
+          <input
+            type="email"
+            name="email"
+            id=""
+            class="box"
+            required
+            placeholder="Enter your email.."
+            autocomplete="off"
+          />
+
+          <span>Your number</span>
+          <input
+            type="number"
+            name="number"
+            id=""
+            class="box"
+            required
+            placeholder="Enter your number.."
+            autocomplete="off"
+          />
+
+          <span>Select cources</span>
+          <select name="cources" id="" class="box" required>
+            <option value="" disabled selected>Select cources</option>
+            <option value="HTML">HTML & CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+          </select>
+
+          <span>Select gender</span>
+          <div class="gender">
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">male</label>
+
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">female</label>
+          </div>
+
+          <input type="submit" value="Register" class="btn" name="send" />
+        </form>
+      </div>
+
+      <div id="paypal-button-container"></div>
+      <p id="result-message"></p>
+      <!-- Replace the "test" client-id value with your client-id -->
+      <script src="https://www.paypal.com/sdk/js?client-id=test&components=buttons&enable-funding=venmo,paylater" data-sdk-integration-source="integrationbuilder_sc"></script>
+      <script src="app.js"></script>
+
+    </div>
+
+    
+  </body>
+</html>
