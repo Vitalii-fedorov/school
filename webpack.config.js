@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './client/checkout.html',
+      template: './client/index.html',
     }),
   ],
 };
